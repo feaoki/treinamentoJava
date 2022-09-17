@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ControleApplication<controle>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "br.paduan.controle.ControleApplication",
+            "projectName": "controle",
+            "args": ""
+        }
+    ]
+}

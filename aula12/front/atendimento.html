@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="/js/atendimento.js"></script>
+</head>
+
+<body onload="validaLogin()">
+
+    <div class="container h-100">
+        <form>
+            <input type="text" id="txtUser" hidden><br>
+            <label for="txtChamado">Chamado:</label>
+            <input type="text" id="txtChamado" disabled><br>
+            <label for="txtAtividade">Atividade:</label>
+            <input type="text" id="txtAtividade" disabled><br>
+            <label for="txtData">Data:</label>
+            <input type="text" id="txtData" disabled><br>
+            <label for="txtDescricao">Descrição:</label>
+            <textarea rows="4" cols="50" maxlength="255" id="txtDescricao"></textarea> <br>
+            <label for="txtData">Horas gastas:</label>
+            <input type="time" max="02:00" id="txtHoras" ><br>
+            <label for="radioTroca">Fez trocas?</label>
+            <input type="radio" name="radioTroca" value="0" id="radioTroca" /> SIM
+            <input type="radio" name="radioTroca" value="1" id="radioNaotroca" checked/> NÃO <br>
+            <input type="text" id="txtAtividadeId" hidden><br>
+            <button class="btn btn-primary" onclick="atualizarChamado(event)">Atualizar</button>
+        </form>
+    </div>
+</body>
+
+</html>
